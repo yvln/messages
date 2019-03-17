@@ -28,6 +28,22 @@ class Form extends React.Component<IProps, IState> {
     private: false,
   };
 
+  componentDidMount() {
+    // @ts-ignore
+    document.addEventListener('keydown', this.keydownHandler);
+  }
+
+  componentWillUnmount() {
+    // @ts-ignore
+    document.removeEventListener('keydown', this.keydownHandler);
+  }
+
+  keydownHandler = (event: React.KeyboardEvent): any => {
+    if (event.keyCode === 13 && event.ctrlKey) {
+      this.handleSubmit();
+    }
+  };
+
   handleChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
     this.setState({
       private: event.target.value === 'private',
@@ -41,11 +57,18 @@ class Form extends React.Component<IProps, IState> {
   };
 
   handleSubmit = async (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    event?: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
-    event.preventDefault();
+    if (event) {
+      event.preventDefault();
+    }
+
     const username = this.props.username;
     if (!username) {
+      return;
+    }
+
+    if (!this.state.message.trim()) {
       return;
     }
 
