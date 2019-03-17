@@ -53,15 +53,15 @@ ShallowWrapper {
                 ]
               }
             />
-            <Button
+            <UNDEFINED
               onClick={[Function]}
             >
-              <Svg
+              <UNDEFINED
                 height={15}
                 name="arrowRight"
                 width={15}
               />
-            </Button>
+            </UNDEFINED>
           </div>
         </form>
       </div>,
@@ -100,15 +100,15 @@ ShallowWrapper {
                   ]
                 }
               />
-              <Button
+              <UNDEFINED
                 onClick={[Function]}
               >
-                <Svg
+                <UNDEFINED
                   height={15}
                   name="arrowRight"
                   width={15}
                 />
-              </Button>
+              </UNDEFINED>
             </div>
           </form>,
         ],
@@ -157,15 +157,15 @@ ShallowWrapper {
                     ]
                   }
                 />
-                <Button
+                <UNDEFINED
                   onClick={[Function]}
                 >
-                  <Svg
+                  <UNDEFINED
                     height={15}
                     name="arrowRight"
                     width={15}
                   />
-                </Button>
+                </UNDEFINED>
               </div>,
             ],
           },
@@ -206,15 +206,15 @@ ShallowWrapper {
                       ]
                     }
                   />,
-                  <Button
+                  <UNDEFINED
                     onClick={[Function]}
                   >
-                    <Svg
+                    <UNDEFINED
                       height={15}
                       name="arrowRight"
                       width={15}
                     />
-                  </Button>,
+                  </UNDEFINED>,
                 ],
                 "className": "Form-clickable",
               },
@@ -246,7 +246,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "children": <Svg
+                    "children": <UNDEFINED
                       height={15}
                       name="arrowRight"
                       width={15}
@@ -265,9 +265,17 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
                     "type": [Function],
                   },
-                  "type": [Function],
                 },
               ],
               "type": "div",
@@ -316,15 +324,15 @@ ShallowWrapper {
                   ]
                 }
               />
-              <Button
+              <UNDEFINED
                 onClick={[Function]}
               >
-                <Svg
+                <UNDEFINED
                   height={15}
                   name="arrowRight"
                   width={15}
                 />
-              </Button>
+              </UNDEFINED>
             </div>
           </form>
         </div>,
@@ -363,15 +371,15 @@ ShallowWrapper {
                     ]
                   }
                 />
-                <Button
+                <UNDEFINED
                   onClick={[Function]}
                 >
-                  <Svg
+                  <UNDEFINED
                     height={15}
                     name="arrowRight"
                     width={15}
                   />
-                </Button>
+                </UNDEFINED>
               </div>
             </form>,
           ],
@@ -420,15 +428,15 @@ ShallowWrapper {
                       ]
                     }
                   />
-                  <Button
+                  <UNDEFINED
                     onClick={[Function]}
                   >
-                    <Svg
+                    <UNDEFINED
                       height={15}
                       name="arrowRight"
                       width={15}
                     />
-                  </Button>
+                  </UNDEFINED>
                 </div>,
               ],
             },
@@ -469,15 +477,15 @@ ShallowWrapper {
                         ]
                       }
                     />,
-                    <Button
+                    <UNDEFINED
                       onClick={[Function]}
                     >
-                      <Svg
+                      <UNDEFINED
                         height={15}
                         name="arrowRight"
                         width={15}
                       />
-                    </Button>,
+                    </UNDEFINED>,
                   ],
                   "className": "Form-clickable",
                 },
@@ -509,7 +517,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
-                      "children": <Svg
+                      "children": <UNDEFINED
                         height={15}
                         name="arrowRight"
                         width={15}
@@ -528,9 +536,17 @@ ShallowWrapper {
                       },
                       "ref": null,
                       "rendered": null,
+                      "type": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "compare": null,
+                        "type": [Function],
+                      },
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
                       "type": [Function],
                     },
-                    "type": [Function],
                   },
                 ],
                 "type": "div",
@@ -624,15 +640,15 @@ ShallowWrapper {
                 ]
               }
             />
-            <Button
+            <UNDEFINED
               onClick={[Function]}
             >
-              <Svg
+              <UNDEFINED
                 height={15}
                 name="arrowRight"
                 width={15}
               />
-            </Button>
+            </UNDEFINED>
           </div>
         </form>
       </div>,
@@ -671,15 +687,15 @@ ShallowWrapper {
                   ]
                 }
               />
-              <Button
+              <UNDEFINED
                 onClick={[Function]}
               >
-                <Svg
+                <UNDEFINED
                   height={15}
                   name="arrowRight"
                   width={15}
                 />
-              </Button>
+              </UNDEFINED>
             </div>
           </form>,
         ],
@@ -728,15 +744,15 @@ ShallowWrapper {
                     ]
                   }
                 />
-                <Button
+                <UNDEFINED
                   onClick={[Function]}
                 >
-                  <Svg
+                  <UNDEFINED
                     height={15}
                     name="arrowRight"
                     width={15}
                   />
-                </Button>
+                </UNDEFINED>
               </div>,
             ],
           },
@@ -777,15 +793,15 @@ ShallowWrapper {
                       ]
                     }
                   />,
-                  <Button
+                  <UNDEFINED
                     onClick={[Function]}
                   >
-                    <Svg
+                    <UNDEFINED
                       height={15}
                       name="arrowRight"
                       width={15}
                     />
-                  </Button>,
+                  </UNDEFINED>,
                 ],
                 "className": "Form-clickable",
               },
@@ -817,7 +833,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "children": <Svg
+                    "children": <UNDEFINED
                       height={15}
                       name="arrowRight"
                       width={15}
@@ -836,9 +852,17 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
                     "type": [Function],
                   },
-                  "type": [Function],
                 },
               ],
               "type": "div",
@@ -887,15 +911,15 @@ ShallowWrapper {
                   ]
                 }
               />
-              <Button
+              <UNDEFINED
                 onClick={[Function]}
               >
-                <Svg
+                <UNDEFINED
                   height={15}
                   name="arrowRight"
                   width={15}
                 />
-              </Button>
+              </UNDEFINED>
             </div>
           </form>
         </div>,
@@ -934,15 +958,15 @@ ShallowWrapper {
                     ]
                   }
                 />
-                <Button
+                <UNDEFINED
                   onClick={[Function]}
                 >
-                  <Svg
+                  <UNDEFINED
                     height={15}
                     name="arrowRight"
                     width={15}
                   />
-                </Button>
+                </UNDEFINED>
               </div>
             </form>,
           ],
@@ -991,15 +1015,15 @@ ShallowWrapper {
                       ]
                     }
                   />
-                  <Button
+                  <UNDEFINED
                     onClick={[Function]}
                   >
-                    <Svg
+                    <UNDEFINED
                       height={15}
                       name="arrowRight"
                       width={15}
                     />
-                  </Button>
+                  </UNDEFINED>
                 </div>,
               ],
             },
@@ -1040,15 +1064,15 @@ ShallowWrapper {
                         ]
                       }
                     />,
-                    <Button
+                    <UNDEFINED
                       onClick={[Function]}
                     >
-                      <Svg
+                      <UNDEFINED
                         height={15}
                         name="arrowRight"
                         width={15}
                       />
-                    </Button>,
+                    </UNDEFINED>,
                   ],
                   "className": "Form-clickable",
                 },
@@ -1080,7 +1104,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
-                      "children": <Svg
+                      "children": <UNDEFINED
                         height={15}
                         name="arrowRight"
                         width={15}
@@ -1099,9 +1123,17 @@ ShallowWrapper {
                       },
                       "ref": null,
                       "rendered": null,
+                      "type": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "compare": null,
+                        "type": [Function],
+                      },
+                    },
+                    "type": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
                       "type": [Function],
                     },
-                    "type": [Function],
                   },
                 ],
                 "type": "div",

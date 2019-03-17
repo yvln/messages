@@ -23,4 +23,4 @@ const Svg = (props: IProps) => {
   );
 };
 
-export default Svg;
+export default React.memo<IProps>(Svg);

@@ -15,4 +15,4 @@ const Button = (props: IProps) => {
   );
 };
 
-export default Button;
+export default React.memo<IProps>(Button);

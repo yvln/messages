@@ -14,7 +14,7 @@ interface IInjectedProps {
 
 export type IProps = IInjectedProps;
 
-export default class Select extends React.Component<IProps> {
+export default class Select extends React.PureComponent<IProps> {
   renderOption = (option: IOption) => {
     return (
       <option key={option.value} value={option.value}>
