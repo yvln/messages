@@ -15,7 +15,10 @@ const mapDispatchToProps = (dispatch: Dispatch): IDispatchProps => {
       dispatch(actions.fetchMessages());
     },
     postMessage: (message: string, isPrivate: boolean, username: string) => {
-      dispatch(actions.postMessage(message, isPrivate, username));
+      return new Promise(async (resolve) => {
+        await dispatch(actions.postMessage(message, isPrivate, username));
+        resolve();
+      });
     },
   };
 };
