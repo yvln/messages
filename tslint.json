@@ -9,6 +9,7 @@
     "tslint-config-prettier"
   ],
   "rules": {
+    "member-access": false,
     "object-literal-sort-keys": [
       false
     ],

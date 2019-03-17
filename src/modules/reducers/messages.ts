@@ -1,3 +1,4 @@
+import { IAction, IMessagesState } from '../../types';
 import {
   GET_MESSAGES,
   GET_MESSAGES_FAILURE,
@@ -6,7 +7,6 @@ import {
   POST_MESSAGE_FAILURE,
   POST_MESSAGE_SUCCESS,
 } from '../actions/messages';
-import { IAction, IMessagesState } from '../../types';
 
 const initialState: IMessagesState = {
   list: [],

@@ -17,26 +17,27 @@ export interface IMessagesState {
     isFailure: boolean;
     isPending: boolean;
     isSuccess: boolean;
-  },
+  };
   post: {
     isFailure: boolean;
     isPending: boolean;
     isSuccess: boolean;
-  },
+  };
 }
 
-export type IUserState = {
+export interface IUserState {
   name: string;
   get: {
     isFailure: boolean;
     isPending: boolean;
     isSuccess: boolean;
-  },
+  };
 }
 
 export interface IFullState {
-  messages: IMessagesState
+  messages: IMessagesState;
   user: IUserState;
 }
 
+// tslint:disable-next-line
 export type Dispatch = Function;

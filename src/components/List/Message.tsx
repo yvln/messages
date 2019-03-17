@@ -24,7 +24,7 @@ class Message extends React.Component<IProps> {
               isPrivate ? 'Badge-private' : 'Badge-public'
             }`}
           >
-            {isPrivate ? "Private" : "Public"}
+            {isPrivate ? 'Private' : 'Public'}
           </div>
         </div>
         <div>{this.props.data.message}</div>

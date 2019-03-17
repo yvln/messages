@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import './List.scss';
 import { IMessage } from '../../types';
 import Container from '../Container';
+import './List.scss';
 import Message from './Message';
 
 export interface IStateProps {

@@ -4,7 +4,7 @@ import './TextArea.scss';
 
 export interface IProps {
   onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  value: string,
+  value: string;
 }
 
 const TextArea = (props: IProps) => {

@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Form
     fetchMessages={[MockFunction]}
+    isFailure={false}
     postMessage={[MockFunction]}
     username="yvln"
   />,
@@ -144,7 +145,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 value=""
               />,
-              undefined,
+              false,
               <div
                 className="Form-clickable"
               >
@@ -194,7 +195,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            undefined,
+            false,
             Object {
               "instance": null,
               "key": undefined,
@@ -442,7 +443,7 @@ ShallowWrapper {
                   onChange={[Function]}
                   value=""
                 />,
-                undefined,
+                false,
                 <div
                   className="Form-clickable"
                 >
@@ -492,7 +493,7 @@ ShallowWrapper {
                 "rendered": null,
                 "type": [Function],
               },
-              undefined,
+              false,
               Object {
                 "instance": null,
                 "key": undefined,

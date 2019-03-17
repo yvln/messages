@@ -1,9 +1,9 @@
+import { IAction, IUserState } from '../../types';
 import {
   GET_USERNAME,
   GET_USERNAME_FAILURE,
   GET_USERNAME_SUCCESS,
 } from '../actions';
-import { IAction, IUserState } from '../../types';
 
 const initialState: IUserState = {
   get: {

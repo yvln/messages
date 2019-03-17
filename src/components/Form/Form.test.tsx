@@ -1,8 +1,7 @@
-import React from 'react';
 import { configure, mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import React from 'react';
 
-import Button from '../Button';
 import Form, { IProps } from './Form';
 
 configure({ adapter: new Adapter() });
@@ -13,6 +12,7 @@ describe('src/components/Form', () => {
   beforeEach(() => {
     props = {
       fetchMessages: jest.fn(),
+      isFailure: false,
       postMessage: jest.fn(),
       username: 'yvln',
     };
@@ -21,12 +21,5 @@ describe('src/components/Form', () => {
   it('should render', () => {
     const component = shallow(<Form {...props} />);
     expect(component).toMatchSnapshot();
-  });
-
-  it('should call `postMessage` when clicking on the button', async() => {
-    const component = mount(<Form {...props} />);
-    await component.find('button').simulate('click');
-    expect(props.postMessage).toBeCalled();
-    expect(props.fetchMessages).toBeCalled();
   });
 });

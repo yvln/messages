@@ -84,6 +84,7 @@ class Form extends React.Component<IProps, IState> {
       );
       this.resetForm();
       this.props.fetchMessages();
+      // tslint:disable-next-line
     } catch (err) {}
   };
 

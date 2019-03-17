@@ -8,9 +8,11 @@ export interface IProps {
 }
 
 const Button = (props: IProps) => {
-  return <div className="Button">
-    <button onClick={props.onClick}>{props.children}</button>
-  </div>;
+  return (
+    <div className="Button">
+      <button onClick={props.onClick}>{props.children}</button>
+    </div>
+  );
 };
 
 export default Button;

@@ -1,7 +1,7 @@
 import sha1 from 'sha1';
 
-import messagesFixtures from './messages.fixtures.json';
 import { IMessage } from '../types';
+import messagesFixtures from './messages.fixtures.json';
 
 const messages = messagesFixtures;
 

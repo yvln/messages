@@ -1,6 +1,5 @@
-
-import { Dispatch, IMessage, } from '../../types';
 import apiClient from '../../api/apiClient';
+import { Dispatch, IMessage } from '../../types';
 
 export const GET_USERNAME = 'GET_USERNAME';
 export const GET_USERNAME_FAILURE = 'GET_USERNAME_FAILURE';

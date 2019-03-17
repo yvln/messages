@@ -2,18 +2,18 @@ import * as React from 'react';
 
 import './Select.scss';
 
-type Option = {
+interface IOption {
   label: string;
   value: string;
-};
+}
 
 interface IInjectedProps {
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
-  options?: Option[];
+  options?: IOption[];
 }
 
 interface IDefaultProps {
-  options: Option[];
+  options: IOption[];
 }
 
 export type IProps = IInjectedProps & IDefaultProps;
@@ -32,8 +32,12 @@ export default class Select extends React.Component<IProps> {
     ],
   };
 
-  renderOption = (option: Option) => {
-    return <option key={option.value} value={option.value}>{option.label}</option>;
+  renderOption = (option: IOption) => {
+    return (
+      <option key={option.value} value={option.value}>
+        {option.label}
+      </option>
+    );
   };
 
   render() {

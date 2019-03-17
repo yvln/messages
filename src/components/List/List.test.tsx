@@ -1,6 +1,6 @@
-import React from 'react';
 import { configure, mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import React from 'react';
 
 import List, { IProps } from './List';
 
@@ -25,8 +25,6 @@ describe('src/components/List', () => {
       ],
       username: 'yvln',
     };
-
-
   });
 
   it('should render', () => {
@@ -35,7 +33,7 @@ describe('src/components/List', () => {
   });
 
   it('should display a loader when is fetching and no messages yet.', () => {
-    const component = mount(<List {...props} isPending messages={[]} />);
+    const component = mount(<List {...props} isPending={true} messages={[]} />);
     expect(component.text()).toContain('...');
   });
 
@@ -45,7 +43,7 @@ describe('src/components/List', () => {
   });
 
   it('should be blurred when is fetching but there are already messages', () => {
-    const component = shallow(<List {...props} isPending />);
+    const component = shallow(<List {...props} isPending={true} />);
     expect(component.hasClass('List-blur'));
   });
 });

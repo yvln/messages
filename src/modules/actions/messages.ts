@@ -1,5 +1,5 @@
-import { Dispatch, IMessage } from '../../types';
 import apiClient from '../../api/apiClient';
+import { Dispatch, IMessage } from '../../types';
 
 export const fetchMessages = () => {
   return async (dispatch: Dispatch) => {

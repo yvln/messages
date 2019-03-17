@@ -6,7 +6,7 @@ import Form, { IDispatchProps, IStateProps } from './Form';
 
 const mapStateToProps = (state: IFullState): IStateProps => ({
   isFailure: state.messages.post.isFailure,
-})
+});
 
 const mapDispatchToProps = (dispatch: Dispatch): IDispatchProps => {
   return {
