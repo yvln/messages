@@ -6,7 +6,7 @@ import {
 import { IAction, IUserState } from '../../types';
 
 const initialState: IUserState = {
-  fetch: {
+  get: {
     isFailure: false,
     isPending: false,
     isSuccess: false,
@@ -19,7 +19,7 @@ const reducer = (state = initialState, action: IAction) => {
     case GET_USERNAME:
       return {
         ...state,
-        fetch: {
+        get: {
           isFailure: false,
           isPending: true,
           isSuccess: false,
@@ -28,7 +28,7 @@ const reducer = (state = initialState, action: IAction) => {
     case GET_USERNAME_FAILURE:
       return {
         ...state,
-        fetch: {
+        get: {
           isFailure: true,
           isPending: false,
           isSuccess: false,
@@ -37,7 +37,7 @@ const reducer = (state = initialState, action: IAction) => {
     case GET_USERNAME_SUCCESS:
       return {
         name: action.data,
-        fetch: {
+        get: {
           isFailure: false,
           isPending: false,
           isSuccess: true,

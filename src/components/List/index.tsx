@@ -5,8 +5,8 @@ import { Dispatch, IFullState } from '../../types';
 import List, { IDispatchProps, IStateProps } from './List';
 
 const mapStateToProps = (state: IFullState): IStateProps => ({
-  isFailure: state.messages.fetch.isFailure,
-  isPending: state.messages.fetch.isPending,
+  isFailure: state.messages.get.isFailure,
+  isPending: state.messages.get.isPending,
   messages: state.messages.list,
 });
 

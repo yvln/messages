@@ -13,7 +13,7 @@ export interface IMessage {
 
 export interface IMessagesState {
   list: IMessage[];
-  fetch: {
+  get: {
     isFailure: boolean;
     isPending: boolean;
     isSuccess: boolean;
@@ -27,7 +27,7 @@ export interface IMessagesState {
 
 export type IUserState = {
   name: string;
-  fetch: {
+  get: {
     isFailure: boolean;
     isPending: boolean;
     isSuccess: boolean;

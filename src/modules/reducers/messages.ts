@@ -10,7 +10,7 @@ import { IAction, IMessagesState } from '../../types';
 
 const initialState: IMessagesState = {
   list: [],
-  fetch: {
+  get: {
     isFailure: false,
     isPending: false,
     isSuccess: false,
@@ -27,7 +27,7 @@ const reducer = (state = initialState, action: IAction) => {
     case GET_MESSAGES:
       return {
         ...state,
-        fetch: {
+        get: {
           isFailure: false,
           isPending: true,
           isSuccess: false,
@@ -36,7 +36,7 @@ const reducer = (state = initialState, action: IAction) => {
     case GET_MESSAGES_FAILURE:
       return {
         ...state,
-        fetch: {
+        get: {
           isFailure: true,
           isPending: false,
           isSuccess: false,
@@ -46,7 +46,7 @@ const reducer = (state = initialState, action: IAction) => {
       return {
         ...state,
         list: action.data,
-        fetch: {
+        get: {
           isFailure: false,
           isPending: false,
           isSuccess: true,
