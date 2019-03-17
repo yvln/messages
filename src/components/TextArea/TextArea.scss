@@ -1,0 +1,23 @@
+@import "styles/_variables.scss";
+
+.TextArea {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $spacing-small;
+
+  > textarea {
+    font-family: 'PT Sans', "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-size: 15px;
+    line-height: 1.3em;
+
+    padding: 2%;
+    width: 96%;
+    height: 70px;
+
+    border: 2px solid $color-lighter;
+    border-radius: .3em;
+
+    resize: none;
+  }
+}

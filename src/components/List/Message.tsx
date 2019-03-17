@@ -1,6 +1,8 @@
 import * as React from 'react';
-// import './Message.scss';
+
+import formatDate from "../../helpers/formatDate";
 import { IMessage } from '../../types';
+import './Message.scss';
 
 interface IProps {
   key: string;
@@ -10,12 +12,14 @@ interface IProps {
 class Message extends React.Component<IProps> {
   renderMessage = (): React.ReactNode => {
     return (
-      <div>
-        {this.props.data.username}
-        {this.props.data.date}
-        {this.props.data.message}
-        {this.props.data.private}
-      </div>
+      <>
+        <span className="first-line">
+          <span className="username">{this.props.data.username}</span> .{' '}
+          <span className="date">{formatDate(this.props.data.date)}</span>
+        </span>
+        <span>{this.props.data.message}</span>
+        <span>{this.props.data.private}</span>
+      </>
     );
   };
 

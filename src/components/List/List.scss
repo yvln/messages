@@ -1,0 +1,15 @@
+@import "styles/_variables.scss";
+
+.List {
+  > .Message {
+    border-bottom: 1px solid $color-grey-light;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.List-blur {
+  filter: blur(.2em);
+}

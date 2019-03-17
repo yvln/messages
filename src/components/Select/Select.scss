@@ -1,0 +1,11 @@
+@import "styles/_variables.scss";
+
+.Select {
+  margin-right: $spacing-medium;
+  
+  select, option {
+    border: none;
+    height: 30px;
+    width: 70px;
+  }
+}

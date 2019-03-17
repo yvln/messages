@@ -1,0 +1,17 @@
+@import "styles/_variables.scss";
+
+.Form {
+  background-color: $color-lightest;
+  padding: $spacing-medium;
+
+  > div {
+    color: $color;
+    font-weight: 600;
+    margin-bottom: $spacing-small;
+  }
+}
+
+.Form-clickable {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,30 @@
+@import "styles/_variables.scss";
+
+.Button {
+  > button {
+    cursor: pointer;
+
+    font-size: 17px;
+    background-color: transparent;
+    transition: .2s;
+
+    height: 30px;
+    width: 30px;
+    
+    border: 2px solid $color-light;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover, &:focus {
+      background-color: rgba(255, 255, 255, .8);
+      transition: .2s;
+    }
+
+    > svg {
+      fill: $color-light;
+    }
+  }
+}

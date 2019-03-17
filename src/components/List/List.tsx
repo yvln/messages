@@ -2,8 +2,9 @@ import sha1 from 'sha1';
 import * as React from 'react';
 
 // import './List.scss';
-import Message from './Message';
 import { IMessage } from '../../types';
+import Container from '../Container';
+import Message from './Message';
 
 const username = 'yvln';
 
@@ -98,7 +99,7 @@ class List extends React.Component<{}> {
   }
 
   render() {
-    return <div className="List">{this.renderList()}</div>;
+    return <Container className="List">{this.renderList()}</Container>;
   }
 }
 

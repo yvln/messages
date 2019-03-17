@@ -1,0 +1,7 @@
+@import "styles/_variables.scss";
+
+.App {
+  min-height: 100vh;
+  padding: $spacing-big $spacing-medium;
+  background-color: $color-grey-light;
+}
