@@ -12,6 +12,7 @@ describe('src/components/TextArea', () => {
   beforeEach(() => {
     props = {
       onChange: jest.fn(),
+      onKeyDown: jest.fn(),
       value: 'This is a value',
     };
   });

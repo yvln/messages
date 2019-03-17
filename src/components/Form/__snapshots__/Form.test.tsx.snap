@@ -32,6 +32,7 @@ ShallowWrapper {
         <form>
           <TextArea
             onChange={[Function]}
+            onKeyDown={[Function]}
             value=""
           />
           <div
@@ -78,6 +79,7 @@ ShallowWrapper {
           <form>
             <TextArea
               onChange={[Function]}
+              onKeyDown={[Function]}
               value=""
             />
             <div
@@ -133,6 +135,7 @@ ShallowWrapper {
             "children": Array [
               <TextArea
                 onChange={[Function]}
+                onKeyDown={[Function]}
                 value=""
               />,
               false,
@@ -174,6 +177,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "onChange": [Function],
+                "onKeyDown": [Function],
                 "value": "",
               },
               "ref": null,
@@ -291,6 +295,7 @@ ShallowWrapper {
           <form>
             <TextArea
               onChange={[Function]}
+              onKeyDown={[Function]}
               value=""
             />
             <div
@@ -337,6 +342,7 @@ ShallowWrapper {
             <form>
               <TextArea
                 onChange={[Function]}
+                onKeyDown={[Function]}
                 value=""
               />
               <div
@@ -392,6 +398,7 @@ ShallowWrapper {
               "children": Array [
                 <TextArea
                   onChange={[Function]}
+                  onKeyDown={[Function]}
                   value=""
                 />,
                 false,
@@ -433,6 +440,7 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "onChange": [Function],
+                  "onKeyDown": [Function],
                   "value": "",
                 },
                 "ref": null,
@@ -595,6 +603,7 @@ ShallowWrapper {
         <form>
           <TextArea
             onChange={[Function]}
+            onKeyDown={[Function]}
             value=""
           />
           <div
@@ -618,16 +627,11 @@ ShallowWrapper {
             <Button
               onClick={[Function]}
             >
-              <svg
-                height="15"
-                viewBox="0 0 24 24"
-                width="15"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                />
-              </svg>
+              <Svg
+                height={15}
+                name="arrowRight"
+                width={15}
+              />
             </Button>
           </div>
         </form>
@@ -646,6 +650,7 @@ ShallowWrapper {
           <form>
             <TextArea
               onChange={[Function]}
+              onKeyDown={[Function]}
               value=""
             />
             <div
@@ -669,16 +674,11 @@ ShallowWrapper {
               <Button
                 onClick={[Function]}
               >
-                <svg
-                  height="15"
-                  viewBox="0 0 24 24"
-                  width="15"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                  />
-                </svg>
+                <Svg
+                  height={15}
+                  name="arrowRight"
+                  width={15}
+                />
               </Button>
             </div>
           </form>,
@@ -706,6 +706,7 @@ ShallowWrapper {
             "children": Array [
               <TextArea
                 onChange={[Function]}
+                onKeyDown={[Function]}
                 value=""
               />,
               false,
@@ -730,16 +731,11 @@ ShallowWrapper {
                 <Button
                   onClick={[Function]}
                 >
-                  <svg
-                    height="15"
-                    viewBox="0 0 24 24"
-                    width="15"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                    />
-                  </svg>
+                  <Svg
+                    height={15}
+                    name="arrowRight"
+                    width={15}
+                  />
                 </Button>
               </div>,
             ],
@@ -752,6 +748,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "onChange": [Function],
+                "onKeyDown": [Function],
                 "value": "",
               },
               "ref": null,
@@ -783,16 +780,11 @@ ShallowWrapper {
                   <Button
                     onClick={[Function]}
                   >
-                    <svg
-                      height="15"
-                      viewBox="0 0 24 24"
-                      width="15"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                      />
-                    </svg>
+                    <Svg
+                      height={15}
+                      name="arrowRight"
+                      width={15}
+                    />
                   </Button>,
                 ],
                 "className": "Form-clickable",
@@ -825,45 +817,26 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "children": <svg
-                      height="15"
-                      viewBox="0 0 24 24"
-                      width="15"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                      />
-                    </svg>,
+                    "children": <Svg
+                      height={15}
+                      name="arrowRight"
+                      width={15}
+                    />,
                     "onClick": [Function],
                   },
                   "ref": null,
                   "rendered": Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "function",
                     "props": Object {
-                      "children": <path
-                        d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                      />,
-                      "height": "15",
-                      "viewBox": "0 0 24 24",
-                      "width": "15",
-                      "xmlns": "http://www.w3.org/2000/svg",
+                      "height": 15,
+                      "name": "arrowRight",
+                      "width": 15,
                     },
                     "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "d": "M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "path",
-                    },
-                    "type": "svg",
+                    "rendered": null,
+                    "type": [Function],
                   },
                   "type": [Function],
                 },
@@ -893,6 +866,7 @@ ShallowWrapper {
           <form>
             <TextArea
               onChange={[Function]}
+              onKeyDown={[Function]}
               value=""
             />
             <div
@@ -916,16 +890,11 @@ ShallowWrapper {
               <Button
                 onClick={[Function]}
               >
-                <svg
-                  height="15"
-                  viewBox="0 0 24 24"
-                  width="15"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                  />
-                </svg>
+                <Svg
+                  height={15}
+                  name="arrowRight"
+                  width={15}
+                />
               </Button>
             </div>
           </form>
@@ -944,6 +913,7 @@ ShallowWrapper {
             <form>
               <TextArea
                 onChange={[Function]}
+                onKeyDown={[Function]}
                 value=""
               />
               <div
@@ -967,16 +937,11 @@ ShallowWrapper {
                 <Button
                   onClick={[Function]}
                 >
-                  <svg
-                    height="15"
-                    viewBox="0 0 24 24"
-                    width="15"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                    />
-                  </svg>
+                  <Svg
+                    height={15}
+                    name="arrowRight"
+                    width={15}
+                  />
                 </Button>
               </div>
             </form>,
@@ -1004,6 +969,7 @@ ShallowWrapper {
               "children": Array [
                 <TextArea
                   onChange={[Function]}
+                  onKeyDown={[Function]}
                   value=""
                 />,
                 false,
@@ -1028,16 +994,11 @@ ShallowWrapper {
                   <Button
                     onClick={[Function]}
                   >
-                    <svg
-                      height="15"
-                      viewBox="0 0 24 24"
-                      width="15"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                      />
-                    </svg>
+                    <Svg
+                      height={15}
+                      name="arrowRight"
+                      width={15}
+                    />
                   </Button>
                 </div>,
               ],
@@ -1050,6 +1011,7 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "onChange": [Function],
+                  "onKeyDown": [Function],
                   "value": "",
                 },
                 "ref": null,
@@ -1081,16 +1043,11 @@ ShallowWrapper {
                     <Button
                       onClick={[Function]}
                     >
-                      <svg
-                        height="15"
-                        viewBox="0 0 24 24"
-                        width="15"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                        />
-                      </svg>
+                      <Svg
+                        height={15}
+                        name="arrowRight"
+                        width={15}
+                      />
                     </Button>,
                   ],
                   "className": "Form-clickable",
@@ -1123,45 +1080,26 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
-                      "children": <svg
-                        height="15"
-                        viewBox="0 0 24 24"
-                        width="15"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                        />
-                      </svg>,
+                      "children": <Svg
+                        height={15}
+                        name="arrowRight"
+                        width={15}
+                      />,
                       "onClick": [Function],
                     },
                     "ref": null,
                     "rendered": Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "host",
+                      "nodeType": "function",
                       "props": Object {
-                        "children": <path
-                          d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
-                        />,
-                        "height": "15",
-                        "viewBox": "0 0 24 24",
-                        "width": "15",
-                        "xmlns": "http://www.w3.org/2000/svg",
+                        "height": 15,
+                        "name": "arrowRight",
+                        "width": 15,
                       },
                       "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "d": "M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "path",
-                      },
-                      "type": "svg",
+                      "rendered": null,
+                      "type": [Function],
                     },
                     "type": [Function],
                   },

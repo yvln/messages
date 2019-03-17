@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TextArea
     onChange={[MockFunction]}
+    onKeyDown={[MockFunction]}
     value="This is a value"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -23,6 +24,7 @@ ShallowWrapper {
     "props": Object {
       "children": <textarea
         onChange={[MockFunction]}
+        onKeyDown={[MockFunction]}
         value="This is a value"
       />,
       "className": "TextArea",
@@ -34,6 +36,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "onChange": [MockFunction],
+        "onKeyDown": [MockFunction],
         "value": "This is a value",
       },
       "ref": null,
@@ -50,6 +53,7 @@ ShallowWrapper {
       "props": Object {
         "children": <textarea
           onChange={[MockFunction]}
+          onKeyDown={[MockFunction]}
           value="This is a value"
         />,
         "className": "TextArea",
@@ -61,6 +65,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "onChange": [MockFunction],
+          "onKeyDown": [MockFunction],
           "value": "This is a value",
         },
         "ref": null,

@@ -49,7 +49,7 @@ class List extends React.Component<IProps> {
     const isFetchingMessages = !this.props.messages.length && this.props.isPending
 
     if (this.props.isFailure) {
-      this.renderError();
+      return this.renderError();
     }
 
     if (hasNoMessages) {
