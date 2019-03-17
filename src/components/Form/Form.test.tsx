@@ -22,4 +22,9 @@ describe('src/components/Form', () => {
     const component = shallow(<Form {...props} />);
     expect(component).toMatchSnapshot();
   });
+
+  it('should display an error if ', () => {
+    const component = shallow(<Form {...props} />);
+    expect(component).toMatchSnapshot();
+  });
 });

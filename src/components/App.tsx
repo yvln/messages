@@ -9,11 +9,11 @@ import List from './List';
 import './App.scss';
 
 interface IStateProps {
-  username?: string;
+  username: string | undefined;
 }
 
 interface IDispatchProps {
-  getUsername: () => void;
+  getUser: () => void;
 }
 
 export type IProps = IStateProps & IDispatchProps;
@@ -21,15 +21,15 @@ export type IProps = IStateProps & IDispatchProps;
 class App extends React.Component<IProps> {
   componentDidMount() {
     if (!this.props.username) {
-      this.props.getUsername();
+      this.props.getUser();
     }
   }
 
   render() {
     return (
       <div className="App">
-        <Form username={this.props.username} />
-        <List username={this.props.username} />
+        <Form />
+        <List />
       </div>
     );
   }
@@ -40,8 +40,8 @@ const mapStateToProps = (state: IFullState): IStateProps => ({
 });
 
 const mapDispatchToProps = (dispatch: Dispatch): IDispatchProps => ({
-  getUsername: () => {
-    dispatch(actions.getUsername());
+  getUser: () => {
+    dispatch(actions.getUser());
   },
 });
 

@@ -1,19 +1,24 @@
 @import "styles/_variables.scss";
 
-.Message {
+.ListMessage {
+  transition: .3s;
   padding: $spacing-medium;
-
   display: flex;
   flex-direction: column;
+
+  &:hover {
+    background-color: $color-grey-lighter;
+    transition: .3s;
+  }
 }
 
-.Message-FirstLine {
+.ListMessage-FirstLine {
   margin-bottom: $spacing-small;
   display: flex;
   justify-content: space-between;
 }
 
-.Message-FirstLine--text {
+.ListMessage-FirstLine--text {
   > .username {
     font-weight: 600;
   }
@@ -24,14 +29,26 @@
   }
 }
 
-.Message-FirstLine--badge {
+.ListMessage-FirstLine--badge {
   text-transform: uppercase;
   text-align: center;
   font-size: 10px;
 
+  user-select: none;
+
   width: 35px;
   padding: $spacing-small;
 
-  border: 1px solid $color-grey-light;
+  border: none;
   border-radius: .5em;
+
+  &.Badge-private {
+    color: white;
+    background-color: $color;
+  }
+
+  &.Badge-public {
+    color: white;
+    background-color: $color-grey;
+  }
 }

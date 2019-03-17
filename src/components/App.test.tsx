@@ -11,7 +11,7 @@ describe('src/components/Button', () => {
 
   beforeEach(() => {
     props = {
-      getUsername: jest.fn(),
+      getUser: jest.fn(),
       username: undefined,
     };
   });

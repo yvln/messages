@@ -30,7 +30,6 @@ ShallowWrapper {
         },
       ]
     }
-    username="yvln"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -47,7 +46,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <Message
+        <ListMessage
           data={
             Object {
               "date": "2019-03-16T09:59:51.935Z",
@@ -90,7 +89,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <Message
+          <ListMessage
             data={
               Object {
                 "date": "2019-03-16T09:59:51.935Z",

@@ -9,29 +9,12 @@ interface IOption {
 
 interface IInjectedProps {
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
-  options?: IOption[];
-}
-
-interface IDefaultProps {
   options: IOption[];
 }
 
-export type IProps = IInjectedProps & IDefaultProps;
+export type IProps = IInjectedProps;
 
 export default class Select extends React.Component<IProps> {
-  static defaultProps = {
-    options: [
-      {
-        label: 'Public',
-        value: 'public',
-      },
-      {
-        label: 'Private',
-        value: 'private',
-      },
-    ],
-  };
-
   renderOption = (option: IOption) => {
     return (
       <option key={option.value} value={option.value}>

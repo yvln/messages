@@ -1,8 +1,8 @@
 import { IAction, IUserState } from '../../types';
 import {
-  GET_USERNAME,
-  GET_USERNAME_FAILURE,
-  GET_USERNAME_SUCCESS,
+  GET_USER_FAILURE,
+  GET_USER_REQUEST,
+  GET_USER_SUCCESS,
 } from '../actions';
 
 const initialState: IUserState = {
@@ -16,7 +16,7 @@ const initialState: IUserState = {
 
 const reducer = (state = initialState, action: IAction) => {
   switch (action.type) {
-    case GET_USERNAME:
+    case GET_USER_REQUEST:
       return {
         ...state,
         get: {
@@ -25,7 +25,7 @@ const reducer = (state = initialState, action: IAction) => {
           isSuccess: false,
         },
       };
-    case GET_USERNAME_FAILURE:
+    case GET_USER_FAILURE:
       return {
         ...state,
         get: {
@@ -34,7 +34,7 @@ const reducer = (state = initialState, action: IAction) => {
           isSuccess: false,
         },
       };
-    case GET_USERNAME_SUCCESS:
+    case GET_USER_SUCCESS:
       return {
         name: action.data,
         get: {

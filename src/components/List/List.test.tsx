@@ -23,7 +23,6 @@ describe('src/components/List', () => {
           private: false,
         },
       ],
-      username: 'yvln',
     };
   });
 

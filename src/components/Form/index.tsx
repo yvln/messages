@@ -6,6 +6,7 @@ import Form, { IDispatchProps, IStateProps } from './Form';
 
 const mapStateToProps = (state: IFullState): IStateProps => ({
   isFailure: state.messages.post.isFailure,
+  username: state.user.name,
 });
 
 const mapDispatchToProps = (dispatch: Dispatch): IDispatchProps => {

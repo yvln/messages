@@ -2,8 +2,8 @@ import * as React from 'react';
 
 import { IMessage } from '../../types';
 import Container from '../Container';
+import Message from '../ListMessage';
 import './List.scss';
-import Message from './Message';
 
 export interface IStateProps {
   isFailure: boolean;
@@ -15,18 +15,13 @@ export interface IDispatchProps {
   fetchMessages: () => void;
 }
 
-interface IInjectedProps {
-  username?: string;
-}
-
 interface IDefaultProps {
   messages: IMessage[];
 }
 
 export type IProps = IDefaultProps &
   IStateProps &
-  IDispatchProps &
-  IInjectedProps;
+  IDispatchProps;
 
 class List extends React.Component<IProps> {
   static defaultProps = {
@@ -37,12 +32,12 @@ class List extends React.Component<IProps> {
     this.props.fetchMessages();
   }
 
-  componentDidUpdate(prevProps: IProps) {
-    if (prevProps.messages.length !== this.props.messages.length) {
-      this.setState({
-        messages: this.props.messages,
-      });
-    }
+  renderError = () => {
+    return (
+      <div className="text">
+        Unable to fetch messages. Please try again later.
+      </div>
+    );
   }
 
   renderMessage = (message: IMessage) => {
@@ -50,19 +45,18 @@ class List extends React.Component<IProps> {
   };
 
   renderList = () => {
+    const hasNoMessages = !this.props.messages.length && !this.props.isPending;
+    const isFetchingMessages = !this.props.messages.length && this.props.isPending
+
     if (this.props.isFailure) {
-      return (
-        <div className="text">
-          Unable to fetch messages. Please try again later.
-        </div>
-      );
+      this.renderError();
     }
 
-    if (!this.props.messages.length && !this.props.isPending) {
+    if (hasNoMessages) {
       return <div className="text">No messages yet.</div>;
     }
 
-    if (!this.props.messages.length && this.props.isPending) {
+    if (isFetchingMessages) {
       return <div className="text">...</div>;
     }
 
@@ -70,10 +64,10 @@ class List extends React.Component<IProps> {
   };
 
   render() {
-    const isToBlur = this.props.messages.length && this.props.isPending;
+    const isRefetching = this.props.messages.length && this.props.isPending;
 
     return (
-      <Container className={`List ${isToBlur ? 'List-blur' : ''}`}>
+      <Container className={`List ${isRefetching ? 'List-blur' : ''}`}>
         {this.renderList()}
       </Container>
     );

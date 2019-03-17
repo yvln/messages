@@ -6,9 +6,9 @@ export const fetchMessages = () => {
     dispatch(fetchMessagesRequest());
     try {
       const messages = await apiClient.getMessages();
-      dispatch(fetchMessagesSuccessRequest(messages));
+      dispatch(fetchMessagesSuccess(messages));
     } catch (err) {
-      dispatch(fetchMessagesFailureRequest());
+      dispatch(fetchMessagesFailure());
     }
   };
 };
@@ -22,41 +22,41 @@ export const postMessage = (
     dispatch(postMessageRequest());
     try {
       await apiClient.postMessage(message, isPrivate, username);
-      dispatch(postMessagesSuccessRequest());
+      dispatch(postMessagesSuccess());
     } catch (err) {
-      dispatch(postMessagesFailureRequest());
+      dispatch(postMessagesFailure());
     }
   };
 };
 
 const fetchMessagesRequest = () => ({
-  type: GET_MESSAGES,
+  type: GET_MESSAGES_REQUEST,
 });
 
-const fetchMessagesFailureRequest = () => ({
+const fetchMessagesFailure = () => ({
   type: GET_MESSAGES_FAILURE,
 });
 
-const fetchMessagesSuccessRequest = (data: IMessage[]) => ({
+const fetchMessagesSuccess = (data: IMessage[]) => ({
   data,
   type: GET_MESSAGES_SUCCESS,
 });
 
 const postMessageRequest = () => ({
-  type: POST_MESSAGE,
+  type: POST_MESSAGE_REQUEST,
 });
 
-const postMessagesFailureRequest = () => ({
+const postMessagesFailure = () => ({
   type: POST_MESSAGE_FAILURE,
 });
 
-const postMessagesSuccessRequest = () => ({
+const postMessagesSuccess = () => ({
   type: POST_MESSAGE_SUCCESS,
 });
 
-export const GET_MESSAGES = 'GET_MESSAGES';
+export const GET_MESSAGES_REQUEST = 'GET_MESSAGES_REQUEST';
 export const GET_MESSAGES_FAILURE = 'GET_MESSAGES_FAILURE';
 export const GET_MESSAGES_SUCCESS = 'GET_MESSAGES_SUCCESS';
-export const POST_MESSAGE = 'POST_MESSAGE';
+export const POST_MESSAGE_REQUEST = 'POST_MESSAGE_REQUEST';
 export const POST_MESSAGE_FAILURE = 'POST_MESSAGE_FAILURE';
 export const POST_MESSAGE_SUCCESS = 'POST_MESSAGE_SUCCESS';

@@ -4,7 +4,7 @@ exports[`src/components/Button should render 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Connect(App)
-    getUsername={[MockFunction]}
+    getUser={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

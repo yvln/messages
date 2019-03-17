@@ -1,7 +1,7 @@
 @import "styles/_variables.scss";
 
 .List {
-  > .Message {
+  > .ListMessage {
     border-bottom: 1px solid $color-grey-light;
 
     &:last-child {

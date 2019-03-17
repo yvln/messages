@@ -3,11 +3,13 @@ import * as React from 'react';
 import Button from '../Button';
 import Container from '../Container';
 import Select from '../Select';
+import Svg from '../Svg';
 import TextArea from '../TextArea';
 import './Form.scss';
 
 export interface IStateProps {
   isFailure: boolean;
+  username: string | undefined;
 }
 
 export interface IDispatchProps {
@@ -15,46 +17,46 @@ export interface IDispatchProps {
   postMessage: (message: string, isPrivate: boolean, username: string) => void;
 }
 
-export interface IInjectedProps {
-  username?: string;
-}
-
 interface IState {
   message: string;
   private: boolean;
 }
 
-export type IProps = IStateProps & IDispatchProps & IInjectedProps;
+export type IProps = IStateProps & IDispatchProps;
+
+const OPTIONS = [
+  {
+    label: 'Public',
+    value: 'public',
+  },
+  {
+    label: 'Private',
+    value: 'private',
+  },
+];
 
 class Form extends React.Component<IProps, IState> {
-  state = {
+  initialState = {
     message: '',
     private: false,
   };
 
-  componentDidMount() {
-    // @ts-ignore
-    document.addEventListener('keydown', this.keydownHandler);
-  }
+  state = this.initialState;
 
-  componentWillUnmount() {
-    // @ts-ignore
-    document.removeEventListener('keydown', this.keydownHandler);
-  }
-
-  keydownHandler = (event: React.KeyboardEvent): any => {
+  handleKeyDown = (event: React.KeyboardEvent): any => {
+    // Submit form when Ctrl + Enter key are pressed
     if (event.keyCode === 13 && event.ctrlKey) {
       this.handleSubmit();
     }
   };
 
-  handleChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     this.setState({
       private: event.target.value === 'private',
     });
   };
 
-  handleChangeTextArea = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+  handleTextAreaChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     this.setState({
       message: event.target.value,
     });
@@ -63,15 +65,16 @@ class Form extends React.Component<IProps, IState> {
   handleSubmit = async (
     event?: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
+    const username = this.props.username;
     if (event) {
       event.preventDefault();
     }
 
-    const username = this.props.username;
     if (!username) {
       return;
     }
 
+    // if the message is empty, do not submit
     if (!this.state.message.trim()) {
       return;
     }
@@ -88,11 +91,16 @@ class Form extends React.Component<IProps, IState> {
     } catch (err) {}
   };
 
+  renderError = () => {
+    return (
+      <div className="error">
+        We were unable to post your message. Please try again later.
+      </div>
+    );
+  };
+
   resetForm = () => {
-    this.setState({
-      message: '',
-      private: false,
-    });
+    this.setState(this.initialState);
   };
 
   render() {
@@ -102,25 +110,15 @@ class Form extends React.Component<IProps, IState> {
           <div>{this.props.username}</div>
           <form>
             <TextArea
-              onChange={this.handleChangeTextArea}
+              onChange={this.handleTextAreaChange}
+              onKeyDown={this.handleKeyDown}
               value={this.state.message}
             />
-            {this.props.isFailure && (
-              <div className="error">
-                We were unable to post your message. Please try again later.
-              </div>
-            )}
+            {this.props.isFailure && this.renderError()}
             <div className="Form-clickable">
-              <Select onChange={this.handleChangeSelect} />
+              <Select onChange={this.handleSelectChange} options={OPTIONS} />
               <Button onClick={this.handleSubmit}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z" />
-                </svg>
+                <Svg width={15} height={15} name="arrowRight" />
               </Button>
             </div>
           </form>

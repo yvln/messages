@@ -1,31 +1,31 @@
 import apiClient from '../../api/apiClient';
-import { Dispatch, IMessage } from '../../types';
+import { Dispatch } from '../../types';
 
-export const GET_USERNAME = 'GET_USERNAME';
-export const GET_USERNAME_FAILURE = 'GET_USERNAME_FAILURE';
-export const GET_USERNAME_SUCCESS = 'GET_USERNAME_SUCCESS';
+export const GET_USER_REQUEST = 'GET_USER_REQUEST';
+export const GET_USER_FAILURE = 'GET_USER_FAILURE';
+export const GET_USER_SUCCESS = 'GET_USER_SUCCESS';
 
-export const getUsername = () => {
+export const getUser = () => {
   return async (dispatch: Dispatch) => {
-    dispatch(getUsernameRequest());
+    dispatch(getUserRequest());
     try {
       const user = await apiClient.getUser();
-      dispatch(getUsernameSuccessRequest(user.name));
+      dispatch(getUserSuccessRequest(user.name));
     } catch (err) {
-      dispatch(getUsernameFailureRequest());
+      dispatch(getUserFailureRequest());
     }
   };
 };
 
-const getUsernameRequest = () => ({
-  type: GET_USERNAME,
+const getUserRequest = () => ({
+  type: GET_USER_REQUEST,
 });
 
-const getUsernameFailureRequest = () => ({
-  type: GET_USERNAME_FAILURE,
+const getUserFailureRequest = () => ({
+  type: GET_USER_FAILURE,
 });
 
-const getUsernameSuccessRequest = (data: string) => ({
+const getUserSuccessRequest = (data: string) => ({
   data,
-  type: GET_USERNAME_SUCCESS,
+  type: GET_USER_SUCCESS,
 });

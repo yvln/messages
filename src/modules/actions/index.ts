@@ -1,8 +1,8 @@
 export {
-  GET_MESSAGES,
+  GET_MESSAGES_REQUEST,
   GET_MESSAGES_FAILURE,
   GET_MESSAGES_SUCCESS,
-  POST_MESSAGE,
+  POST_MESSAGE_REQUEST,
   POST_MESSAGE_FAILURE,
   POST_MESSAGE_SUCCESS,
   fetchMessages,
@@ -10,8 +10,8 @@ export {
 } from './messages';
 
 export {
-  GET_USERNAME,
-  GET_USERNAME_FAILURE,
-  GET_USERNAME_SUCCESS,
-  getUsername,
+  GET_USER_REQUEST,
+  GET_USER_FAILURE,
+  GET_USER_SUCCESS,
+  getUser,
 } from './user';
