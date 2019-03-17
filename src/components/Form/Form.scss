@@ -9,6 +9,12 @@
     font-weight: 600;
     margin-bottom: $spacing-small;
   }
+
+  .error {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+  }
 }
 
 .Form-clickable {

@@ -1,8 +1,12 @@
 import { connect } from 'react-redux';
 
 import * as actions from '../../modules/actions/messages';
-import { Dispatch } from '../../types';
-import Form, { IDispatchProps } from './Form';
+import { Dispatch, IFullState } from '../../types';
+import Form, { IDispatchProps, IStateProps } from './Form';
+
+const mapStateToProps = (state: IFullState): IStateProps => ({
+  isFailure: state.messages.post.isFailure,
+})
 
 const mapDispatchToProps = (dispatch: Dispatch): IDispatchProps => {
   return {
@@ -16,6 +20,6 @@ const mapDispatchToProps = (dispatch: Dispatch): IDispatchProps => {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Form);

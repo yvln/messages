@@ -50,12 +50,20 @@ class List extends React.Component<IProps> {
   };
 
   renderList = () => {
+    if (this.props.isFailure) {
+      return (
+        <div className="text">
+          Unable to fetch messages. Please try again later.
+        </div>
+      );
+    }
+
     if (!this.props.messages.length && !this.props.isPending) {
-      return 'No messages yet.';
+      return <div className="text">No messages yet.</div>;
     }
 
     if (!this.props.messages.length && this.props.isPending) {
-      return '...';
+      return <div className="text">...</div>;
     }
 
     return this.props.messages.map(this.renderMessage);

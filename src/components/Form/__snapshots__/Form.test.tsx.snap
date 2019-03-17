@@ -144,6 +144,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 value=""
               />,
+              undefined,
               <div
                 className="Form-clickable"
               >
@@ -193,6 +194,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
+            undefined,
             Object {
               "instance": null,
               "key": undefined,
@@ -440,6 +442,7 @@ ShallowWrapper {
                   onChange={[Function]}
                   value=""
                 />,
+                undefined,
                 <div
                   className="Form-clickable"
                 >
@@ -489,6 +492,7 @@ ShallowWrapper {
                 "rendered": null,
                 "type": [Function],
               },
+              undefined,
               Object {
                 "instance": null,
                 "key": undefined,

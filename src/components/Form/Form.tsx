@@ -6,6 +6,10 @@ import Select from '../Select';
 import TextArea from '../TextArea';
 import './Form.scss';
 
+export interface IStateProps {
+  isFailure: boolean;
+}
+
 export interface IDispatchProps {
   fetchMessages: () => void;
   postMessage: (message: string, isPrivate: boolean, username: string) => void;
@@ -20,7 +24,7 @@ interface IState {
   private: boolean;
 }
 
-export type IProps = IDispatchProps & IInjectedProps;
+export type IProps = IStateProps & IDispatchProps & IInjectedProps;
 
 class Form extends React.Component<IProps, IState> {
   state = {
@@ -80,9 +84,7 @@ class Form extends React.Component<IProps, IState> {
       );
       this.resetForm();
       this.props.fetchMessages();
-    } catch (err) {
-      console.log(err);
-    }
+    } catch (err) {}
   };
 
   resetForm = () => {
@@ -102,6 +104,11 @@ class Form extends React.Component<IProps, IState> {
               onChange={this.handleChangeTextArea}
               value={this.state.message}
             />
+            {this.props.isFailure && (
+              <div className="error">
+                We were unable to post your message. Please try again later.
+              </div>
+            )}
             <div className="Form-clickable">
               <Select onChange={this.handleChangeSelect} />
               <Button onClick={this.handleSubmit}>

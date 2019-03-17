@@ -8,6 +8,11 @@
       border-bottom: none;
     }
   }
+  
+  > .text {
+    padding: $spacing-medium;
+    text-align: center;
+  }
 }
 
 .List-blur {
