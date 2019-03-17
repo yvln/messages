@@ -1,0 +1,637 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/Form should render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Form
+    fetchMessages={[MockFunction]}
+    postMessage={[MockFunction]}
+    username="yvln"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="Form"
+      >
+        <div>
+          yvln
+        </div>
+        <form>
+          <TextArea
+            onChange={[Function]}
+            value=""
+          />
+          <div
+            className="Form-clickable"
+          >
+            <Select
+              onChange={[Function]}
+              options={
+                Array [
+                  Object {
+                    "label": "Public",
+                    "value": "public",
+                  },
+                  Object {
+                    "label": "Private",
+                    "value": "private",
+                  },
+                ]
+              }
+            />
+            <Button
+              onClick={[Function]}
+            >
+              <svg
+                height="15"
+                viewBox="0 0 24 24"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                />
+              </svg>
+            </Button>
+          </div>
+        </form>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            yvln
+          </div>,
+          <form>
+            <TextArea
+              onChange={[Function]}
+              value=""
+            />
+            <div
+              className="Form-clickable"
+            >
+              <Select
+                onChange={[Function]}
+                options={
+                  Array [
+                    Object {
+                      "label": "Public",
+                      "value": "public",
+                    },
+                    Object {
+                      "label": "Private",
+                      "value": "private",
+                    },
+                  ]
+                }
+              />
+              <Button
+                onClick={[Function]}
+              >
+                <svg
+                  height="15"
+                  viewBox="0 0 24 24"
+                  width="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                  />
+                </svg>
+              </Button>
+            </div>
+          </form>,
+        ],
+        "className": "Form",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "yvln",
+          },
+          "ref": null,
+          "rendered": "yvln",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <TextArea
+                onChange={[Function]}
+                value=""
+              />,
+              <div
+                className="Form-clickable"
+              >
+                <Select
+                  onChange={[Function]}
+                  options={
+                    Array [
+                      Object {
+                        "label": "Public",
+                        "value": "public",
+                      },
+                      Object {
+                        "label": "Private",
+                        "value": "private",
+                      },
+                    ]
+                  }
+                />
+                <Button
+                  onClick={[Function]}
+                >
+                  <svg
+                    height="15"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                    />
+                  </svg>
+                </Button>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "onChange": [Function],
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Select
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Public",
+                          "value": "public",
+                        },
+                        Object {
+                          "label": "Private",
+                          "value": "private",
+                        },
+                      ]
+                    }
+                  />,
+                  <Button
+                    onClick={[Function]}
+                  >
+                    <svg
+                      height="15"
+                      viewBox="0 0 24 24"
+                      width="15"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                      />
+                    </svg>
+                  </Button>,
+                ],
+                "className": "Form-clickable",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "onChange": [Function],
+                    "options": Array [
+                      Object {
+                        "label": "Public",
+                        "value": "public",
+                      },
+                      Object {
+                        "label": "Private",
+                        "value": "private",
+                      },
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <svg
+                      height="15"
+                      viewBox="0 0 24 24"
+                      width="15"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                      />
+                    </svg>,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <path
+                        d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                      />,
+                      "height": "15",
+                      "viewBox": "0 0 24 24",
+                      "width": "15",
+                      "xmlns": "http://www.w3.org/2000/svg",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                    "type": "svg",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="Form"
+        >
+          <div>
+            yvln
+          </div>
+          <form>
+            <TextArea
+              onChange={[Function]}
+              value=""
+            />
+            <div
+              className="Form-clickable"
+            >
+              <Select
+                onChange={[Function]}
+                options={
+                  Array [
+                    Object {
+                      "label": "Public",
+                      "value": "public",
+                    },
+                    Object {
+                      "label": "Private",
+                      "value": "private",
+                    },
+                  ]
+                }
+              />
+              <Button
+                onClick={[Function]}
+              >
+                <svg
+                  height="15"
+                  viewBox="0 0 24 24"
+                  width="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                  />
+                </svg>
+              </Button>
+            </div>
+          </form>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              yvln
+            </div>,
+            <form>
+              <TextArea
+                onChange={[Function]}
+                value=""
+              />
+              <div
+                className="Form-clickable"
+              >
+                <Select
+                  onChange={[Function]}
+                  options={
+                    Array [
+                      Object {
+                        "label": "Public",
+                        "value": "public",
+                      },
+                      Object {
+                        "label": "Private",
+                        "value": "private",
+                      },
+                    ]
+                  }
+                />
+                <Button
+                  onClick={[Function]}
+                >
+                  <svg
+                    height="15"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                    />
+                  </svg>
+                </Button>
+              </div>
+            </form>,
+          ],
+          "className": "Form",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "yvln",
+            },
+            "ref": null,
+            "rendered": "yvln",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <TextArea
+                  onChange={[Function]}
+                  value=""
+                />,
+                <div
+                  className="Form-clickable"
+                >
+                  <Select
+                    onChange={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "Public",
+                          "value": "public",
+                        },
+                        Object {
+                          "label": "Private",
+                          "value": "private",
+                        },
+                      ]
+                    }
+                  />
+                  <Button
+                    onClick={[Function]}
+                  >
+                    <svg
+                      height="15"
+                      viewBox="0 0 24 24"
+                      width="15"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                      />
+                    </svg>
+                  </Button>
+                </div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "onChange": [Function],
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Select
+                      onChange={[Function]}
+                      options={
+                        Array [
+                          Object {
+                            "label": "Public",
+                            "value": "public",
+                          },
+                          Object {
+                            "label": "Private",
+                            "value": "private",
+                          },
+                        ]
+                      }
+                    />,
+                    <Button
+                      onClick={[Function]}
+                    >
+                      <svg
+                        height="15"
+                        viewBox="0 0 24 24"
+                        width="15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                        />
+                      </svg>
+                    </Button>,
+                  ],
+                  "className": "Form-clickable",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "onChange": [Function],
+                      "options": Array [
+                        Object {
+                          "label": "Public",
+                          "value": "public",
+                        },
+                        Object {
+                          "label": "Private",
+                          "value": "private",
+                        },
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <svg
+                        height="15"
+                        viewBox="0 0 24 24"
+                        width="15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                        />
+                      </svg>,
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <path
+                          d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"
+                        />,
+                        "height": "15",
+                        "viewBox": "0 0 24 24",
+                        "width": "15",
+                        "xmlns": "http://www.w3.org/2000/svg",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "d": "M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "path",
+                      },
+                      "type": "svg",
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "form",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
