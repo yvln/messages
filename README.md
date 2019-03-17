@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Messages
 
-## Available Scripts
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a4ca94a5d6024244aa2197416e33f280)](https://www.codacy.com/app/yvln/messages?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yvln/messages&amp;utm_campaign=Badge_Grade) 
+[![Build Status](https://travis-ci.com/yvln/messages.svg?branch=master)](https://travis-ci.com/yvln/messages) 
 
-In the project directory, you can run:
+Simple messages app written in TypeScript, React and Redux, with a fake API.
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```console
+$ npm install
+$ npm start
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+This project is also available [here](http://messages-yvln.surge.sh/).
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Message list
 
-### `npm run build`
+![Screenshot_2019-03-18 Messages(5)](https://user-images.githubusercontent.com/23476109/54510435-84c01100-494d-11e9-9bd9-4188a8d644eb.png)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### User input
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![Screenshot_2019-03-18 Messages(2)](https://user-images.githubusercontent.com/23476109/54510383-55110900-494d-11e9-82b3-3738b71a5deb.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot_2019-03-18 Messages(3)](https://user-images.githubusercontent.com/23476109/54510314-15e2b800-494d-11e9-8862-9b73635a8361.png)
 
-### `npm run eject`
+## Error handling
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Screenshot_2019-03-18 Messages(1)](https://user-images.githubusercontent.com/23476109/54510449-930e2d00-494d-11e9-854d-1980152b56d4.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screenshot_2019-03-18 Messages](https://user-images.githubusercontent.com/23476109/54510456-99040e00-494d-11e9-9dbe-f40dd5553cbb.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Mobile
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Screenshot_2019-03-18 Messages(4)](https://user-images.githubusercontent.com/23476109/54510460-9dc8c200-494d-11e9-9b44-b1ac1c2e3f66.png)
