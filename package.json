@@ -23,9 +23,13 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/react-redux": "^7.0.3",
     "@types/sha1": "^1.1.1",
     "node-sass": "^4.11.0",
     "prettier": "^1.16.4",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "sha1": "^1.1.1",
     "tslint": "^5.14.0",
     "tslint-react": "^3.6.0"
