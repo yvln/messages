@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import formatDate from "../../helpers/formatDate";
+import formatDate from '../../helpers/formatDate';
 import { IMessage } from '../../types';
 import './Message.scss';
 
@@ -11,14 +11,23 @@ interface IProps {
 
 class Message extends React.Component<IProps> {
   renderMessage = (): React.ReactNode => {
+    const isPrivate = this.props.data.private;
     return (
       <>
-        <span className="first-line">
-          <span className="username">{this.props.data.username}</span> .{' '}
-          <span className="date">{formatDate(this.props.data.date)}</span>
-        </span>
-        <span>{this.props.data.message}</span>
-        <span>{this.props.data.private}</span>
+        <div className="Message-FirstLine">
+          <div className="Message-FirstLine--text">
+            <span className="username">{this.props.data.username}</span> .{' '}
+            <span className="date">{formatDate(this.props.data.date)}</span>
+          </div>
+          <div
+            className={`Message-FirstLine--badge ${
+              isPrivate ? 'Badge-private' : 'Badge-public'
+            }`}
+          >
+            {isPrivate ? "Private" : "Public"}
+          </div>
+        </div>
+        <div>{this.props.data.message}</div>
       </>
     );
   };
